@@ -69,6 +69,24 @@
 #company-city{
     width: 700px;
 }
+.button{
+    width: 100%;
+    text-align: center;
+    margin:2%;
+    padding: 20px;
+    /* width: 200px; */
+
+}
+input[type=submit]{
+    padding: 10px;
+    width: 200px;
+    /* height: 30px; */
+    border-radius: 20px;
+    border: 1px solid teal;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: teal;
+}
 @media(max-width:1000px){
     .main .registration-form .col .details tbody tr{
         display: flex;
