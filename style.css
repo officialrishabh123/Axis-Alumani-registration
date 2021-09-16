@@ -1,158 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Nunito', sans-serif;
 }
-body{
+
+.main{
     width: 100vw;
     height: 100vh;
-    /* text-align: center; */
-}
-.main{
-    width: 100%;
-    height: 100%;
 }
 .main header{
-    width: 100%;
-    font-size: 40px;
-    font-weight: 800;
+    position: relative;
+    background: rgb(192, 87, 39);
+    font-size: 35px;
     color: white;
-    background-color: rgb(146, 53, 25);
     text-align: center;
-    /* box-shadow: 0px 0px 10px rgba(255,255,255,0.5); */
+    font-weight: 700;
+    width: 100%;
+    
 }
 .main .registration-form{
-    margin:3% ;
+    margin: 4%;
     text-transform: capitalize;
 }
 .main .registration-form .col{
- /* margin: 3%; */
-    text-transform: capitalize;
-   
+    margin: 2%;
 }
 .main .registration-form .col .heading{
-    margin: 0 3%;
-    text-transform: capitalize;
+    background: rgba(192, 87, 39, 0.877);
+    padding: 10px;
+    color: white;
+}
+.main .registration-form .col .details{
+    font-size: 20px;
+    background: rgba(192, 87, 39, 0.541);
+    padding: 20px;
+    font-weight: 600;
+}
+.main .registration-form .col .details tbody{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(146, 53, 25, 0.781);
-    padding: 1%;
-    color: cornsilk;
+    flex-wrap: wrap;
 }
-.main .registration-form .col .heading span .fa-minus
-{
-    display: none;    
-}
-.main .registration-form .col .heading:hover span .fa-plus
-{
-    display: none;    
-}
-.main .registration-form .col .heading:hover span .fa-minus
-{
-    display: block;    
-}
-.line{
-    margin: 0 3%;
-}
-
-
-.main .registration-form .col .details{
-    margin:0 3%;
-    /* text-align: center; */
-    /* color: white; */
-    background-color: rgba(146, 53, 25, 0.164);;
-
-}
-.main .registration-form .col  tbody tr
-{
-    padding: 6px ;
-}
-
-.main .registration-form .col  .details tr{
-     
-    font-size: 20px;
-     text-align: start;
-     align-items: center;
-     display: grid;
-    grid-template-columns: 1fr 4fr;
-}
-.main .registration-form .col  .details tr td:nth-child(1){
+.main .registration-form .col .details tbody tr td:nth-child(1){
     width: 200px;
 }
-
-.details table tbody{
-    width: 100%;
-    position: relative;
-    text-align: left;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-.main .registration-form .col .details input{
-    padding: 2px;
+.main .registration-form .col .details tbody tr td:nth-child(2) input{
+    width:300px;
+    height: 27px;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 4px;
+    border:none;
     font-size: 18px;
-    margin: 0 3em ;
-    width: 250px;
+    color: teal;
 }
-
-
-.main .registration-form .col .details select
-{
-    width: 260px;
+.main .registration-form .col .details tbody tr td:nth-child(2) select{
+    width:310px;
     height: 35px;
-    padding: 2px;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 4px;
+    border:none;
     font-size: 18px;
-    margin: 0 3em ;
-  
-
-    /* border-right: none; */
+    color: teal;
 }
-
-#company-city
-{
+#company-city{
     width: 700px;
 }
-
-.button{
-    width: 100%;
-   padding: 3%;
-
-    text-align: center;
-}
-.button input[type=submit]
-{
-    width: 200px;
-    /* height: 30px; */
-    font-size: 20px;
-    padding: 5px;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid teal;
-    color: teal;
-    font-weight: bolder;
-    text-transform: uppercase;
-    
-}
-
-@media(max-width:800px){
-    .details table tbody{
-       
-        display: grid;
-        grid-template-columns: 1fr;
+@media(max-width:1000px){
+    .main .registration-form .col .details tbody tr{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1%;
     }
-    .main .registration-form .col  .details tr td:nth-child(1){
-        max-width: 300px;
+    #company-city{
+        width:300px;
     }
-    #company-city
-    {
-        width: 100%;
-    }
-    .main .registration-form .col .details tr {
-        grid-template-columns: 1fr;
-    }
-    
 }
