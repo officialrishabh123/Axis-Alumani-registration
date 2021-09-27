@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: #232f3e;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.main .left-side {
+    padding: 10px 0px;
+}
+
+.main .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .right-side .user-icon {
+    padding: 0 0.5em;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+.main .right-side .profile {
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.sidebar {
+    /* margin: -20px; */
+    width: 100%;
+    height: 100%;
+    background: #232f3e;
+    /* position:fixed; */
+    text-align: center;
+     padding: 0px;
+     color: white;
+}
+/* 
+.sidebar {
+    display: none;
+} */
+
+/* .main .left-side:hover .sidebar {
+    display: block;
+} */
+
+.main .sidebar .user-logo {
+    padding: 20px 10px;
+    text-align: center;
+    left: 2%;
+    top: 0%;
+}
+
+.main .sidebar .user-logo i,img{
+    font-size: 2em;
+    height: 70px;
+    width: 70px;
+    border-radius: 5%;
+    border: 2px solid white;
+    padding:10px;
+
+}
+
+.main .sidebar .edit input {
+    /* position: relative; */
+    width: 90%;
+    height: 40px;
+    /* font-size: 15px; */
+    color: white;
+    border: 1px solid rgba(0, 128, 128, 0.514);
+    background: none;
+    /* font-weight: 800; */
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.col2 {
+    width: 100%;
+
+}
+
+.col2 .inner-col2 {
+
+    margin: 5em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.col2 .inner-col2 .box {
+
+    /* width: 300px; */
+    height: 300px;
+    border: 1px solid rgba(0, 128, 128, 0.5);
+    border-radius: 20px;
+    /* background: yellow; */
+    /* margin: 40px; */
+    padding: 10px;
+    overflow: hidden;
+    color: teal;
+}
+
+.col2 .inner-col2 .box h1 {
+    color: red;
+    padding: 10px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+
+
+.col2 .inner-col2 .box table td,
+th {
+    border-top: 1px solid rgba(0, 128, 128, 0.514);
+    border-right: 1px solid rgba(0, 128, 128, 0.575);
+    border-radius: 10px;
+}
+
+.col2 .inner-col2 .box table td:last-child,
+th:last-child {
+    border-right: none;
+
+}
+
+.col2 .inner-col2 .box table th {
+    color: red;
+    border-top: none;
+}
+
+.col2 .inner-col2 .box table tr,
+th,
+td {
+    /* border:1px solid teal; */
+    padding: 5px 40px;
+
+}
+
+
+
+.id-roll{
+    font-size: 18px;
+}
+.id-roll p:nth-child(2){
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.profile-row {
+    width: 100%;
+    z-index: -1;
+}
+
+.profile-row .inner-profile-row {
+    margin: 5% 15%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    /* flex-direction: column;           */
+}
+
+.profile-row .inner-profile-row .left-column {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 100% 0% 0% 100%;
+    border-right: none;
+    background: #232f3ef8;
+}
+
+.profile-row .inner-profile-row .left-column img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    /* border: 1px solid teal; */
+
+}
+
+.profile-row .inner-profile-row .right-column {
+    border: 2px solid white;
+    border-left: none;
+    height: 300px;
+    width: 400px;
+    padding-left: 10%;
+    /* position: absolute; */
+    text-align: center;
+
+
+}
+
+.profile-row .inner-profile-row .right-column {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: white;
+    background: #232f3ef5;
+}
+.profile-row .inner-profile-row .right-column .box{
+    padding:10px;
+    text-transform:capitalize;
+    text-align: left;
+}
+.profile-row .inner-profile-row .right-column .box p:nth-child(1)
+{
+    font-weight: 900;
+}
+
+@media(max-width:1000px) {
+  
+}
